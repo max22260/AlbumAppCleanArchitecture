@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assessment</string>
+    <string name="an_error_occurred">An error occurred. Please try again later.</string>
+    <string name="search_hint">Search for image</string>
+    <string name="loading">loading… </string>
+    <string name="photo_description">Photo view</string>
+
+</resources>

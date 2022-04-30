@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profile">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.nagy.assessment.profile.presentation.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_profile_to_search"
+            app:destination="@id/search">
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.nagy.assessment.search.presentation.SearchFragment"
+        android:label="search"
+        tools:layout="@layout/search_fragment">
+
+        <argument
+            android:name="albumId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_search_to_photoViewerFragment"
+            app:destination="@id/photoViewerFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/photoViewerFragment"
+        android:name="com.nagy.assessment.viewphoto.presentation.PhotoViewerFragment"
+        android:label="photo_viewer_fragment"
+        tools:layout="@layout/photo_viewer_fragment" >
+
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
