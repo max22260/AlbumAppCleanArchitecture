@@ -1,4 +1,6 @@
-# Bo_Task_Assessment
+# AlbumAppCleanArchitecture
+-AlbumAppCleanArchitecture is a case study implemented by clean architecture \ unidirectional data flow architecture
+
 
 ## Architecture
  
